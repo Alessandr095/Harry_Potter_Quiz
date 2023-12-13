@@ -12,7 +12,11 @@ score = 0
 q_num = 0
 
 def check_answer(answers, correct, response):
-    """Function with if else statment to check if answer is correct or not according to the indexes"""
+    """
+    Function with if else statment to check
+    if answer is correct or not according to the indexes
+    
+    """
     global score
     global q_num
 
@@ -34,4 +38,45 @@ def check_answer(answers, correct, response):
 
     qq.pop(0)
 
-    
+
+    def give_question(ques):
+        """ 
+        prints current score.
+        it shuffles the answers randomly with random module
+        checks if user has put in correct letter
+        if not print choice of correct answers(indexes)
+        user input but pressing enter take user to next question
+        """
+    global score # for score to work globally throughout the code
+    os.system('clear')
+
+    print(f'Score: {score}\n')
+
+    print(f'Question {q_num + 1}')
+
+    question = ques["question"]
+
+    answers = ques["answer"]
+    random.shuffle(answers)
+
+    correct = ques["correct_answer"]
+
+    print(question)
+
+    astring = ""
+    for i, a in enumerate(answers):
+        iterator = indexes[i]
+        astring += f"{iterator}. {a}\n"
+
+    print(astring)
+
+    response = input("Please enter the correct letter: ").upper()
+
+    if response in indexes:
+        check_answer(answers, correct, response)
+    else:
+        os.system('clear')
+        print("Please enter a valid answer (A, B, C or D)")
+        input("Press enter to continue")
+
+
