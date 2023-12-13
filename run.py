@@ -129,7 +129,43 @@ def show_rules():
     print("You will be told if you are correct or not.")
     print("\n")
     option = input("Press enter to return to main menu.")
-    main_menu()
+    main_menu() # calls main menu 
+
+
+def main_menu():
+    """
+    a function to for the main menu
+    shuffle question randomly for future use of the quiz
+    displays the start, rules, exit options
+    
+    """
+    global qq
+    global score
+
+    random.shuffle(qq)
+
+    os.system('clear')
+    menu = ['Start', 'Rules', 'Exit']
+    score = 0
+    menustring = ""
+    for i, a in enumerate(menu):
+        iterator = indexes[i]
+        menustring += f"{iterator}. {a}\n"
+
+    print(menustring)
+
+    menuselect = input(f"Please select an option: ").upper()
+
+    if menuselect == "A":
+        run_quiz()
+    elif menuselect == "B":
+        show_rules()
+    elif menuselect == "C":
+        print("Goodbye!")
+        exit()
+
+
+main_menu()
 
 
 
