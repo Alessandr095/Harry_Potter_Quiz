@@ -1,4 +1,4 @@
-import os # import of os module to manipulate files and directories.
+from os import system, name # import of os module to manipulate files and directories.
 import random # for the use of randomising answers.
 from questions import questions # importing the questions from questions.py file for declutter.
 
@@ -40,7 +40,7 @@ def check_answer(answers, correct, response):
     correctindex = answers.index(correct)
 
     if pickedindex == correctindex:
-        os.system('clear')
+        clear()
         print("Correct!")
         score += 1
     else:
@@ -132,7 +132,7 @@ def show_rules():
     function that gives the user an option 
     to view the rules of the quiz with print statments
     """
-    os.system('clear')
+    clear()
     print("Rules:\n")
     print("You will be asked a series of questions about Harry Potter.")
     print("You will be presented with 4 possible answers.")
