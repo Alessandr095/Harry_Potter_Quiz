@@ -63,7 +63,7 @@ def give_question(ques):
     user input but pressing enter take user to next question
     """
     global score # for score to work globally throughout the code
-    os.system('clear')
+    clear()
 
     print(f'Score: {score}\n')
 
@@ -90,7 +90,7 @@ def give_question(ques):
     if response in indexes:
         check_answer(answers, correct, response)
     else:
-        os.system('clear')
+        clear()
         print("Please enter a valid answer (A, B, C or D)")
         input("Press enter to continue")
 
@@ -100,7 +100,7 @@ def end_card():
     end_card function to display to the user 
     their incremented score of the total answers
     """
-    os.system('clear')
+    clear()
     print("🏆🏆🏆")
     print(f"You have finished the quiz!\nYour final score was {score}/{total}")
 
@@ -112,8 +112,6 @@ def run_quiz():
     it calls the end card function and displays to the user to return to the main menu 
     """
     global qq
-    global score
-    global q_num
     global total
     total = len(qq)
     while len(qq) > 0:
@@ -121,8 +119,6 @@ def run_quiz():
         give_question(q)
 
     if len(qq) == 0:
-        score = 0
-        q_num = 0
         qq = finished[::-1]
 
         end_card()
