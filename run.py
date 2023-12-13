@@ -50,7 +50,8 @@ def check_answer(answers, correct, response):
 
     q_num += 1
 
-    qq.pop(0)
+    completed_question = qq.pop(0)
+    finished.append(completed_question) 
 
 
 def give_question(ques):
