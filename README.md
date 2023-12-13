@@ -68,8 +68,8 @@ incremented score of all correct answers.
 
   ![Linter Screen shot](assets/images/linter.webp)
   
+testing done with Python linter provided by code institute. 
 
-    testing done with Python linter provided by code institute. 
   ### Bugs.
 
   - I came across no major bugs while testing. 
