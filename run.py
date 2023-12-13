@@ -34,7 +34,7 @@ def check_answer(answers, correct, response):
     global score
     global q_num
 
-    os.system('clear') # clears console for better user interface
+    clear()
 
     pickedindex = indexes.index(response)
     correctindex = answers.index(correct)
