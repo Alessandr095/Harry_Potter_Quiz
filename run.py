@@ -90,6 +90,32 @@ def end_card():
     print(f"You have finished the quiz!\nYour final score was {score}/{total}")
 
 
+def run_quiz():
+    """
+    function run the quiz and 
+    once it iterates through all ten questions
+    it calls the end card function and displays to the user to return to the main menu 
+    """
+    global qq
+    global score
+    global q_num
+    global total
+    total = len(qq)
+    while len(qq) > 0:
+        q = qq[0]
+        give_question(q)
+
+    if len(qq) == 0:
+        score = 0
+        q_num = 0
+        qq = finished[::-1]
+
+        end_card()
+        print('\n')
+        input("Press enter to return to main menu.")
+        main_menu()
+
+
 
 
 
