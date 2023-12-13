@@ -1,7 +1,7 @@
 import os # import of os module to manipulate files and directories.
 import random # for the use of randomising answers.
 from questions import questions # importing the questions from questions.py file for declutter.
-import logging as # logging module to prevent user errors within the quiz.
+
 
 qq = questions
 
@@ -137,7 +137,7 @@ def main_menu():
     a function to for the main menu
     shuffle question randomly for future use of the quiz
     displays the start, rules, exit options
-    
+
     """
     global qq
     global score
