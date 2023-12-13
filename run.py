@@ -152,6 +152,7 @@ def main_menu():
     """
     global qq
     global score
+    global q_num 
 
     random.shuffle(qq)
 
