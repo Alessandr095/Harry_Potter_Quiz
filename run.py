@@ -4,6 +4,7 @@ from questions import questions # importing the questions from questions.py file
 
 
 qq = questions
+finished = []
 
 #indexes the questions from the questions file, instead of adding the answers by letter to the questions file, for randomisation of answers.
 total = len(qq)
