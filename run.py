@@ -12,6 +12,19 @@ indexes = ['A', 'B', 'C', 'D']
 score = 0 
 q_num = 0
 
+def clear():
+    """
+    function to clear 
+    """
+    # for windows
+    if name == 'nt':
+        _ = system('cls')
+
+    # for mac and linux(here, os.name is 'posix')
+    else:
+        _ = system('clear')
+
+
 def check_answer(answers, correct, response):
     """
     Function with if else statment to check
@@ -164,9 +177,10 @@ def main_menu():
     elif menuselect == "C":
         print("Goodbye!")
         exit()
-
+    
 
 main_menu()
+
 
 
 
