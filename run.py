@@ -46,7 +46,7 @@ def check_answer(answers, correct, response):
     else:
         print("Answer was incorrect")
 
-    input("Press enter to continue")
+    input("Press enter to continue\n")
 
     q_num += 1
 
@@ -85,14 +85,14 @@ def give_question(ques):
 
     print(astring)
 
-    response = input("Please enter the correct letter: ").upper()
+    response = input("Please enter the correct letter:\n").upper()
 
     if response in indexes:
         check_answer(answers, correct, response)
     else:
         clear()
         print("Please enter a valid answer (A, B, C or D)")
-        input("Press enter to continue")
+        input("Press enter to continue\n")
 
 
 def end_card():
@@ -123,7 +123,7 @@ def run_quiz():
 
         end_card()
         print('\n')
-        input("Press enter to return to main menu.")
+        input("Press enter to return to main menu.\n")
         main_menu()
 
 
@@ -179,7 +179,7 @@ def main_menu():
         print("Goodbye!")
         exit()
     else: 
-        pass
+        main_menu()
     
 
 main_menu()
