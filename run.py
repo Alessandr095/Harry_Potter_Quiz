@@ -1,16 +1,16 @@
-from os import system, name # import of os module to manipulate files and directories.
-import random # for the use of randomising answers.
+from os import system, name  # import of os module
+import random  # for the use of randomising answers.
 from questions import questions # importing the questions from questions.py file for declutter.
-
 
 qq = questions
 finished = []
 
-#indexes the questions from the questions file, instead of adding the answers by letter to the questions file, for randomisation of answers.
+# indexes the questions from the questions file.
 total = len(qq)
 indexes = ['A', 'B', 'C', 'D']
 score = 0 
 q_num = 0
+
 
 def clear():
     """
@@ -29,7 +29,7 @@ def check_answer(answers, correct, response):
     """
     Function with if else statment to check
     if answer is correct or not according to the indexes
-    
+
     """
     global score
     global q_num
@@ -51,18 +51,19 @@ def check_answer(answers, correct, response):
     q_num += 1
 
     completed_question = qq.pop(0)
-    finished.append(completed_question) 
+    finished.append(completed_question)
 
 
 def give_question(ques):
-    """ 
+
+    """
     prints current score.
     it shuffles the answers randomly with random module
     checks if user has put in correct letter
     if not print choice of correct answers(indexes)
     user input but pressing enter take user to next question
     """
-    global score # for score to work globally throughout the code
+    global score  # for score to work globally throughout the code
     clear()
 
     print(f'Score: {score}\n')
@@ -97,7 +98,7 @@ def give_question(ques):
 
 def end_card():
     """
-    end_card function to display to the user 
+    end_card function to display to the user
     their incremented score of the total answers
     """
     clear()
@@ -107,9 +108,10 @@ def end_card():
 
 def run_quiz():
     """
-    function run the quiz and 
+    function run the quiz and
     once it iterates through all ten questions
-    it calls the end card function and displays to the user to return to the main menu 
+    it calls the end card function and displays
+    to the user to return to the main menu
     """
     global qq
     global total
@@ -129,7 +131,7 @@ def run_quiz():
 
 def show_rules():
     """
-    function that gives the user an option 
+    function that gives the user an option
     to view the rules of the quiz with print statments
     """
     clear()
@@ -140,7 +142,7 @@ def show_rules():
     print("You will be told if you are correct or not.")
     print("\n")
     option = input("Press enter to return to main menu.")
-    main_menu() # calls main menu 
+    main_menu()  # calls main menu
 
 
 def main_menu():
@@ -152,7 +154,7 @@ def main_menu():
     """
     global qq
     global score
-    global q_num 
+    global q_num
 
     score = 0
     q_num = 0
@@ -178,14 +180,8 @@ def main_menu():
     elif menuselect == "C":
         print("Goodbye!")
         exit()
-    else: 
+    else:
         main_menu()
-    
+
 
 main_menu()
-
-
-
-
-
-
