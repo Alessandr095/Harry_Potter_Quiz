@@ -52,6 +52,12 @@ the score is tallied up through a function that is displayed at the end of the q
 
 ![questions screen shot](assets/images/questions.webp)
 
+### End Result 
+
+![game over](assets/images/tallied.webp)
+
+incremented score of all correct answers.
+
 
 
 ### Testing.
