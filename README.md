@@ -25,6 +25,12 @@ A representation of how the basis of Python works , easy to visualise the code f
 ### General Structure.
 This is back End code displayed in a mock terminal provided by Heroku 
 
+### Structure
+
+![flow chart](assets/images/flowchart.webp)
+
+Flow Chart of quiz.
+
 ### Wire Frame.
 
 as this is back end development a wire frame would not suite this application 
