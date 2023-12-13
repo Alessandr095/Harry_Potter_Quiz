@@ -39,14 +39,14 @@ def check_answer(answers, correct, response):
     qq.pop(0)
 
 
-    def give_question(ques):
-        """ 
-        prints current score.
-        it shuffles the answers randomly with random module
-        checks if user has put in correct letter
-        if not print choice of correct answers(indexes)
-        user input but pressing enter take user to next question
-        """
+def give_question(ques):
+    """ 
+    prints current score.
+    it shuffles the answers randomly with random module
+    checks if user has put in correct letter
+    if not print choice of correct answers(indexes)
+    user input but pressing enter take user to next question
+    """
     global score # for score to work globally throughout the code
     os.system('clear')
 
@@ -78,5 +78,18 @@ def check_answer(answers, correct, response):
         os.system('clear')
         print("Please enter a valid answer (A, B, C or D)")
         input("Press enter to continue")
+
+
+def end_card():
+    """
+    end_card function to display to the user 
+    their incremented score of the total answers
+    """
+    os.system('clear')
+    print("🏆🏆🏆")
+    print(f"You have finished the quiz!\nYour final score was {score}/{total}")
+
+
+
 
 
