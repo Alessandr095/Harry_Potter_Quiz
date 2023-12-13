@@ -116,6 +116,22 @@ def run_quiz():
         main_menu()
 
 
+def show_rules():
+    """
+    function that gives the user an option 
+    to view the rules of the quiz with print statments
+    """
+    os.system('clear')
+    print("Rules:\n")
+    print("You will be asked a series of questions about Harry Potter.")
+    print("You will be presented with 4 possible answers.")
+    print("You must enter the letter of the correct answer.")
+    print("You will be told if you are correct or not.")
+    print("\n")
+    option = input("Press enter to return to main menu.")
+    main_menu()
+
+
 
 
 
