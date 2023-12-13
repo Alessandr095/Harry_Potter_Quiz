@@ -34,6 +34,20 @@ as this is back end development a wire frame would not suite this application
 Randomising of questions and answers to make the quiz less repetitive 
 the score is tallied up through a function that is displayed at the end of the quiz.
 
+### Options 
+
+![Options screen shot](assets/images/options.webp)
+
+### Rules
+
+![Rules screen shot](assets/images/rules.webp)
+
+### Questions 
+
+![questions screen shot](assets/images/questions.webp)
+
+
+
 ### Testing.
 
   - Test was done before deployment to see if everything in the terminal was acting correctly.
