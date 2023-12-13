@@ -154,6 +154,9 @@ def main_menu():
     global score
     global q_num 
 
+    score = 0
+    q_num = 0
+
     random.shuffle(qq)
 
     clear()
