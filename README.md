@@ -1,32 +1,93 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Harry Potter Quiz
 
-Welcome,
+![Heroku Mock Terminal](assets/images/Heroku.webp)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+link to deployed site: https://harry-potter-quiz-287fba48143f.herokuapp.com/
 
-## Reminders
+This is my PP3 Python project for my Diploma in Full Stack software development at Code Institute.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+This is a quiz based application created with Python.
 
-## Creating the Heroku app
+This is a multiple choice quiz. with a main menu, Rules option, and Exit option randomised questions and answers to keep repeat users playing.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Target Audience.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+Anyone that would like to test the knowledge on the Harry Potter films
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## User Stories.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+A site for someone to test there general knowledge in Harry Potter.
 
-Connect your GitHub repository and deploy as normal.
+A representation of how the basis of Python works , easy to visualise the code for new coders,variables to functions, to different scopes.
 
-## Constraints
+## Design.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+### General Structure.
+This is back End code displayed in a mock terminal provided by Heroku 
 
----
+### Wire Frame.
 
-Happy coding!
+as this is back end development a wire frame would not suite this application 
+
+## Features.
+
+Randomising of questions and answers to make the quiz less repetitive 
+the score is tallied up through a function that is displayed at the end of the quiz.
+
+### Testing.
+
+  - Test was done before deployment to see if everything in the terminal was acting correctly.
+  - While hosting on Heroku, multiple OS were used to test the functionality of the quiz. such as macOS and Windows 
+  - all imports are working. 
+
+  ![Linter Screen shot](assets/images/linter.webp)
+  
+  ### Bugs.
+
+  - I came across no major bugs while testing. 
+  - just a spacing problem that was caused by the incorrect placement of '\n'
+  - and a problem with the quiz restarting at question 11 instead of question 1 with a quiz restart
+  
+  ### Validator Testing.
+
+  
+ ### Technologies and Languages used.
+    
+- Github - used for repositories and deployment of website through github pages.
+- Codeanywhere - IDE used for writing code.
+- HTML - Language used for structure of website.
+- CSS - Language used for styling the structure of the website.
+- JavaScript - Language used for the script, used to make the site less static with more function.
+- Font Awesome - Used for custom fonts within the website such as website links.
+- Google Fonts - used for typography throughout the website.
+- lightHouse - used to test site peformance.
+- Wave - used to test visability and accessability.
+- WC3 - used for validators of markdown symantics and CSS through jigsaw
+
+### Unfixed Bugs. 
+
+- No unfixed bugs.
+
+### Deployment.
+
+  Harry Potter Quiz is deployed on Heroku.
+- Steps to deploy
+- Commit and push to GitHub
+- Go to the Heroku Dashboard
+- Click "Create new app"
+- Name app and select location
+- Add Config Vars for Creds and Port in Settings tab
+- Add the buildbacks to Python and NodeJS in that order
+- Select appropriate deployment method, GitHub
+- Connect to Github and link to repository
+- Enable automatic deployment and/or deploy manually
+- Click on Deploy
+- Live link to Harry Potter Quiz can be found here: https://harry-potter-quiz-287fba48143f.herokuapp.com/
+
+### Credits.
+
+- Python understanding and implimentation for randomising the questions and answers came from a family friend, Luke Janse Van Rensburg.
+
+### Media.
+
+- No Media 
