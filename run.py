@@ -156,7 +156,7 @@ def main_menu():
 
     random.shuffle(qq)
 
-    os.system('clear')
+    clear()
     menu = ['Start', 'Rules', 'Exit']
     score = 0
     menustring = ""
@@ -175,6 +175,8 @@ def main_menu():
     elif menuselect == "C":
         print("Goodbye!")
         exit()
+    else: 
+        pass
     
 
 main_menu()
