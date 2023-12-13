@@ -1,4 +1,4 @@
-quiz_questions = [
+questions = [
     {
         'question': 'What colour is associated with Gryffindor House?',
         'answer': ['Green', 'Yellow', 'Red','Blue'],
@@ -47,7 +47,7 @@ quiz_questions = [
     {
         'question': 'Which Student reopened the Chamber of secrets',
         'answer': ['Ron Weasley', 'Tom Riddle', 'Ginny Weasley', 'Harry Potter'],
-        'correct_answer': 'C'
+        'correct_answer': 'Ginny Weasley'
     }
     
 ]
