@@ -102,7 +102,7 @@ def end_card():
     their incremented score of the total answers
     """
     clear()
-    print("🏆🏆🏆")
+    print("🏆🏆🏆\n")
     print(f"You have finished the quiz!\nYour final score was {score}/{total}")
 
 
