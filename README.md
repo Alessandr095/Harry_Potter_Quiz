@@ -1,6 +1,6 @@
 # Harry Potter Quiz
 
-![Heroku Mock Terminal](assets/images/Heroku.webp)
+![Heroku Mock Terminal](assets/images/heroku.webp)
 
 link to deployed site: https://harry-potter-quiz-287fba48143f.herokuapp.com/
 
