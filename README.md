@@ -62,13 +62,15 @@ the score is tallied up through a function that is displayed at the end of the q
 
   ![Linter Screen shot](assets/images/linter.webp)
   
+
+    testing done with Python linter provided by code institute. 
   ### Bugs.
 
   - I came across no major bugs while testing. 
   - just a spacing problem that was caused by the incorrect placement of '\n'
   - and a problem with the quiz restarting at question 11 instead of question 1 with a quiz restart
   
-  ### Validator Testing.
+  
 
   
  ### Technologies and Languages used.
